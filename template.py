@@ -20,8 +20,8 @@ list_of_files=[
     "src/logger/logging.py",
     "src/exceptions/exceptions.py",
     
-    "src/unit/__init__.py",
-    "src/integration/__init__.py",
+    "test/unit/__init__.py",
+    "test/integration/__init__.py",
     "init_setup.sh",
     "requirements.txt",
     "requirements_dev/txt",
@@ -44,4 +44,4 @@ for filepath in list_of_files:
         os.makedirs(filedir,exist_ok=True)
     if (not os.path.exists(filepath)) or (os.path.getsize(filepath)==0):
         with open(filepath,"w") as f:
-            pass
+            pass # create an empty file
