@@ -22,7 +22,7 @@ train_arr,test_arr=ob.initialize_data_transformation(train_data_path,test_data_p
 
 @dataclass
 class ModelTrainerConfig:
-    trained_model_file_path=os.path.join("artifacts","model,pkl")
+    trained_model_file_path=os.path.join("artifacts","model.pkl")
     
 class ModelTrainer:
     def __init__(self):
