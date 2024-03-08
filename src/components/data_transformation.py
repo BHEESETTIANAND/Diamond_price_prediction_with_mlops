@@ -3,6 +3,9 @@ import numpy as np
 import pickle
 from src.logger.logging import logging
 from src.exceptions.exceptions import customexception
+from src.components.data_ingestion import DataIngestion
+from src.utils.utils import save_object
+
 import os
 import sys
 from dataclasses import dataclass
@@ -14,20 +17,11 @@ from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OrdinalEncoder,StandardScaler
 
-# from src.utils.utils import save_object
+obj=DataIngestion()
 
-# copied utils code here to avoid errors .But don't follow it next time
-def save_object(file_path, obj):
-    try:
-        dir_path = os.path.dirname(file_path)
+train_data_path,test_data_path=obj.initiate_data_ingestion()
+    
 
-        os.makedirs(dir_path, exist_ok=True)
-
-        with open(file_path, "wb") as file_obj:
-            pickle.dump(obj, file_obj)
-
-    except Exception as e:
-        raise customexception(e, sys)
 
 @dataclass
 class DataTransformationConfig:
@@ -142,7 +136,7 @@ class DataTransformation:
         
 if __name__ =="__main__":
     obj=DataTransformation()
-    obj.initialize_data_transformation("D:/mlops/MLOPs-1/artifacts/train_data.csv","D:/mlops/MLOPs-1/artifacts/test_data.csv")
+    obj.initialize_data_transformation(train_data_path,test_data_path)
             
             
             
