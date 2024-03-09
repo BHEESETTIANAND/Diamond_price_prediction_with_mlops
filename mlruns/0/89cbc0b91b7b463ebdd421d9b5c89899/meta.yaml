@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/mlops/MLOPs-1/mlruns/0/89cbc0b91b7b463ebdd421d9b5c89899/artifacts
+end_time: 1709969189938
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 89cbc0b91b7b463ebdd421d9b5c89899
+run_name: silent-carp-416
+run_uuid: 89cbc0b91b7b463ebdd421d9b5c89899
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1709969189899
+status: 4
+tags: []
+user_id: B MOHAN RAO

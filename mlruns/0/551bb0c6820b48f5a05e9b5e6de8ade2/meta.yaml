@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/mlops/MLOPs-1/mlruns/0/551bb0c6820b48f5a05e9b5e6de8ade2/artifacts
+end_time: 1709969431534
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 551bb0c6820b48f5a05e9b5e6de8ade2
+run_name: nervous-hog-700
+run_uuid: 551bb0c6820b48f5a05e9b5e6de8ade2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1709969424113
+status: 3
+tags: []
+user_id: B MOHAN RAO

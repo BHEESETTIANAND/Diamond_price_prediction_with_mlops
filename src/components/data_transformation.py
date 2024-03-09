@@ -10,6 +10,7 @@ import os
 import sys
 from dataclasses import dataclass
 from pathlib import Path
+import mlflow
 
 
 from sklearn.compose import ColumnTransformer
@@ -20,6 +21,8 @@ from sklearn.preprocessing import OrdinalEncoder,StandardScaler
 obj=DataIngestion()
 
 train_data_path,test_data_path=obj.initiate_data_ingestion()
+
+
     
 
 
