@@ -8,6 +8,7 @@ dvc
 ipykernel
 xgboost
 streamlit
+streamlit-option-menu
 
 # dev requirements
 
