@@ -18,6 +18,6 @@ setup(
     version="0.0.1",
     author="BheesettiAnand",
     author_email="anandbheesetti@gmail.com",
-    install_requires=get_requirements("requirements_dev.txt"),
+    install_requires=get_requirements("requirements.txt"),
     packages=find_packages()
 )

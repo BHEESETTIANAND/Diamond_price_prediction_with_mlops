@@ -50,3 +50,4 @@ class ModelEvaluation:
         except Exception as e:
             logging.info("error occured in model evaluation")
             raise customexception(e,sys)
+                    
