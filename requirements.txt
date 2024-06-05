@@ -3,7 +3,7 @@ numpy
 seaborn
 flask
 scikit-learn
-mlflow==2.2.2
+# mlflow==2.2.2
 dvc
 apache-airflow
 ipykernel
